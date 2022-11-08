@@ -13,12 +13,12 @@ public class Humain {
 		this.argent = argent;
 	}
 
-	private void parler(String text) {
+	protected void parler(String text) {
 		System.out.println("(" + this.getNom() + ") - " + text);
 	}
 
 	public void direBonjour() {
-		this.parler("Bonjour ! Je m'appelle " + this.getNom() + " et j'aime boire du " + this.boisson);
+		this.parler("Bonjour ! Je m'appelle " + this.getNom() + " et j'aime boire du " + this.boisson + ".");
 	}
 
 	public void boire() {
