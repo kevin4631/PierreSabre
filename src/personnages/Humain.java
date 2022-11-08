@@ -36,13 +36,13 @@ public class Humain {
 		}
 	}
 
-	public int gagnerArgent(int somme) {
-		this.argent += somme;
+	public int gagnerArgent(int gain) {
+		this.argent += gain;
 		return this.getArgent();
 	}
 
-	public int perdreArgent(int somme) {
-		this.argent -= somme;
+	public int perdreArgent(int perte) {
+		this.argent -= perte;
 		return this.getArgent();
 	}
 

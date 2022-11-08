@@ -9,14 +9,14 @@ public class Yakuza extends Humain {
 		this.clan = clan;
 	}
 
-	public void extorquer(Commercant commercant) {
+	public void extorquer(Commercant victime) {
 		this.parler("Tiens, tiens, ne serait-ce pas un faible marchand qui passe par là ?");
-		this.parler(commercant.getNom() + ", si tu tiens à la vie donne moi ta bourse !");
-		int agentGagner = commercant.seFaireExtorquer();
+		this.parler(victime.getNom() + ", si tu tiens à la vie donne moi ta bourse !");
+		int agentGagner = victime.seFaireExtorquer();
 		this.gagnerArgent(agentGagner);
 		this.reputation += 1;
-		this.parler("J’ai piqué les " + agentGagner + " sous de " + commercant.getNom() + ", ce qui me fait "
-				+ this.getArgent() + " sous dans ma\n" + "poche. Hi ! Hi !");
+		this.parler("J’ai piqué les " + agentGagner + " sous de " + victime.getNom() + ", ce qui me fait "
+				+ this.getArgent() + " sous dans ma\n" + "	poche. Hi ! Hi !");
 	}
 
 }
