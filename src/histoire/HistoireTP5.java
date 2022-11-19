@@ -1,5 +1,6 @@
 package histoire;
 
+import personnages.GrandMere;
 import personnages.commercant.Commercant;
 import personnages.ronin.Ronin;
 import personnages.ronin.Samourai;
@@ -17,21 +18,27 @@ public class HistoireTP5 {
 
 		Samourai akimoto = new Samourai("akimoto", "Miyamoto", "saké", 80);
 
-		Traitre masaka = new Traitre("masaka", "Miyamoto", "whisky", 100);
+		Traitre masako = new Traitre("masako", "Miyamoto", "whisky", 100);
 		Commercant kumi = new Commercant("Kumi", 10);
 		Commercant chonin = new Commercant("Chonin", 40);
 		Commercant marco = new Commercant("Marco", 20);
 		Yakuza yaku = new Yakuza("Yaku Le Noir", "whisky", 30, "Warsong");
 		Ronin roro = new Ronin("Roro", "shochu", 60);
+		/*
+		 * masako.faireLeGentil(); masako.ranconner(kumi); masako.ranconner(chonin);
+		 * masako.ranconner(marco); akimoto.faireConnaissanceAvec(masako);
+		 * masako.ranconner(marco); masako.faireConnaissanceAvec(yaku);
+		 * masako.faireLeGentil(); masako.faireConnaissanceAvec(roro);
+		 */
 
-		masaka.faireLeGentil();
-		masaka.ranconner(kumi);
-		masaka.ranconner(chonin);
-		masaka.ranconner(marco);
-		akimoto.faireConnaissanceAvec(masaka);
-		masaka.ranconner(marco);
-		masaka.faireConnaissanceAvec(yaku);
-		masaka.faireLeGentil();
-		masaka.faireConnaissanceAvec(roro);
+		GrandMere grandMere = new GrandMere("Grand-Mère", 10);
+		grandMere.faireConnaissanceAvec(akimoto);
+		grandMere.faireConnaissanceAvec(yaku);
+		grandMere.faireConnaissanceAvec(masako);
+		grandMere.faireConnaissanceAvec(kumi);
+		grandMere.faireConnaissanceAvec(marco);
+		grandMere.faireConnaissanceAvec(chonin);
+		grandMere.ragoter();
+
 	}
 }

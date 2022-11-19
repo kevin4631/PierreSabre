@@ -60,7 +60,7 @@ public class Humain {
 		this.memoriser(humain);
 	}
 
-	private void memoriser(Humain humain) {
+	protected void memoriser(Humain humain) {
 		if (this.insertionHumain >= this.memoire.length)
 			this.insertionHumain = 0;
 		this.memoire[this.insertionHumain++] = humain;
