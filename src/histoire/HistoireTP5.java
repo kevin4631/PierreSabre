@@ -1,10 +1,10 @@
 package histoire;
 
-import personnages.Commercant;
-import personnages.Ronin;
-import personnages.Samourai;
-import personnages.Traitre;
-import personnages.Yakuza;
+import personnages.commercant.Commercant;
+import personnages.ronin.Ronin;
+import personnages.ronin.Samourai;
+import personnages.ronin.Traitre;
+import personnages.yakuza.Yakuza;
 
 public class HistoireTP5 {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package personnages;
+package personnages.ronin;
 
 public class Samourai extends Ronin {
 

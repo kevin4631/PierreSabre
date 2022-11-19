@@ -1,4 +1,7 @@
-package personnages;
+package personnages.yakuza;
+
+import personnages.Humain;
+import personnages.commercant.Commercant;
 
 public class Yakuza extends Humain {
 	private String clan;

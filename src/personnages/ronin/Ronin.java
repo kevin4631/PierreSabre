@@ -1,4 +1,8 @@
-package personnages;
+package personnages.ronin;
+
+import personnages.Humain;
+import personnages.commercant.Commercant;
+import personnages.yakuza.Yakuza;
 
 public class Ronin extends Humain {
 	private int honneur = 1;

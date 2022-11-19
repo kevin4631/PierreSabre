@@ -1,6 +1,9 @@
-package personnages;
+package personnages.ronin;
 
 import java.util.Random;
+
+import personnages.Humain;
+import personnages.commercant.Commercant;
 
 public class Traitre extends Samourai {
 	private int niveauTaitrise = 0;

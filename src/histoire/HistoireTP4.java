@@ -1,8 +1,8 @@
 package histoire;
 
-import personnages.Commercant;
-import personnages.Ronin;
-import personnages.Yakuza;
+import personnages.commercant.Commercant;
+import personnages.ronin.Ronin;
+import personnages.yakuza.Yakuza;
 
 public class HistoireTP4 {
 	public static void main(String[] args) {
